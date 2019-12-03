@@ -4,23 +4,23 @@ private String firstName;
 private String lastName;
 private String telephoneNumber;
 private String address;
-private int age;
+private int Age;
 
 public Person (){}
 
 
-public Person(String firstName,String lastName, String telephoneNumber,String address,int age)
+public Person(String firstName,String lastName, String telephoneNumber,String address,int Age)
 {
 this.firstName=firstName;
 this.lastName=lastName;
 this.telephoneNumber=telephoneNumber;
 this.address=address;
-this.age=age;
+this.Age=Age;
 
 }
   public int getAge()
   {
-  return age;
+  return Age;
   }
   public String getFirstName () {
       return firstName;
@@ -35,9 +35,9 @@ this.age=age;
       return telephoneNumber;
 }
 
-   public void setAge(int age)
+   public void setAge(int Age)
    {
-   this.age=age;
+   this.Age=Age;
    
    }
 public void setFirstName (String firstName) {

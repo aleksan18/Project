@@ -4,19 +4,19 @@ import java.util.*;
 public class Staff extends Person{
 private String Id;
 private String CPR;
-private double salary;
+private double Salary;
 private String position; 
 
 public Staff() {}
 
      Scanner console= new Scanner(System.in);
  
-public Staff(String Id,String CPR,String firstName,String lastName, String telephoneNumber,String address,int age,double salary, String position)
+public Staff(String Id,String CPR,String firstName,String lastName, String telephoneNumber,String address,int age,double Salary, String position)
 {
 super(firstName,lastName,telephoneNumber,address,age);
 this.Id=Id;
 this.CPR=CPR;
-this.salary=salary;
+this.Salary=Salary;
 this.position=position;
 }
 
@@ -30,7 +30,7 @@ return CPR;
 }
 public double getSalary()
 {
-return salary;
+return Salary;
 }
 public String getPosition()
 {
@@ -46,9 +46,9 @@ public void setCPR(String CPR)
 {
 this.CPR=CPR;
 }
-public void setSalary(double salary)
+public void setSalary(double Salary)
 {
-this.salary=salary;
+this.Salary=Salary;
 }
 public void setPosition(String position)
 {
@@ -59,7 +59,7 @@ this.position=position;
  //toString
    @Override
    public String toString() {
-        return String.format ("Id: "+Id+"CPR: " +CPR+ ", First Name:" + getFirstName() + ", Last Name: " +  getLastName() + ", Address: " + getAddress() + ", Phone Number: " + getTelephoneNumber()+", Age;"+getAge()+", Salary: "+salary+", Position: "+position);
+        return String.format ("Id: "+Id+"CPR: " +CPR+ ", First Name:" + getFirstName() + ", Last Name: " +  getLastName() + ", Address: " + getAddress() + ", Phone Number: " + getTelephoneNumber()+", Age;"+getAge()+", Salary: "+Salary+", Position: "+position);
     }
   public String toFile(){
       return (Id + " " + CPR + " " + getFirstName() + " " +  getLastName() + " " + getAddress() + " " + getTelephoneNumber() + " " + getAge() + " " + position + " "+salary);
